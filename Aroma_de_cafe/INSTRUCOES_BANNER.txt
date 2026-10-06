@@ -1,0 +1,33 @@
+BANNER COM VÍDEO - CAFÉ SENAC
+==============================
+
+Arquivos envolvidos:
+- index.html
+- css/style.css
+- js/script.js
+- video/banner_cafe.mp4
+- img/fundo_cafe.jpg (imagem de fallback)
+
+O vídeo de exemplo está em Full HD: 1920 x 1080 pixels, proporção 16:9.
+
+COMO TROCAR O VÍDEO
+1. Coloque o novo vídeo dentro da pasta video/.
+2. Se mantiver o nome banner_cafe.mp4, não precisa alterar o HTML.
+3. Se usar outro nome, altere esta linha no index.html:
+   <source id="fonteVideoBanner" src="video/banner_cafe.mp4" type="video/mp4">
+
+COMO FUNCIONAM AS CAMADAS
+1. Vídeo: z-index 0
+2. Overlay escuro: z-index 1
+3. Texto e botão: z-index 2
+
+FALLBACK
+Se o vídeo não carregar ou não puder ser reproduzido, o JavaScript adiciona
+uma classe chamada video-fallback e o CSS exibe img/fundo_cafe.jpg como fundo.
+
+ATRIBUTOS IMPORTANTES
+- autoplay: tenta iniciar automaticamente
+- muted: necessário para autoplay na maioria dos navegadores
+- loop: repete o vídeo
+- playsinline: evita abertura em tela cheia automática em alguns celulares
+- object-fit: cover: preenche todo o banner sem deformar o vídeo
