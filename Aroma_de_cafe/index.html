@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <!--
-  PROJETO DIDÁTICO: Café Senac
-  Autor: Prof. William Pantoja Silva
+  
   Curso: Front End
-  Objetivo da aula: mostrar como HTML, CSS e JavaScript trabalham juntos.
+  Objetivo da aula: mostrar como HTML e CSS e JavaScript trabalham juntos.
   - HTML: estrutura do site
   - CSS: aparência visual
   - JavaScript: interação com o usuário
@@ -27,12 +26,20 @@
     <button id="botaoMenu" class="botao-menu">☰</button>
 
     <!-- Menu principal. O JavaScript irá mostrar/ocultar no celular -->
-    <nav id="menu" class="menu">
-      <a href="#inicio">Início</a>
-      <a href="#cardapio">Cardápio</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#contato">Contato</a>
-    </nav>
+<nav id="menu" class="menu">
+  <a href="index.html">Início</a>
+  <a href="paginas/cardapio.html">Cardápio</a>
+  <a href="paginas/galeria.html">Galeria</a>
+  <a href="paginas/noticias.html">Notícias</a>
+  <a href="paginas/midias.html">Mídias</a>
+  <a href="paginas/sustentabilidade.html">Sustentabilidade</a>
+  <a href="paginas/projetos.html">Projetos Sociais</a>
+  <a href="paginas/orcamento.html">Orçamento</a>
+  <a href="paginas/sobre.html">Sobre</a>
+  <a href="paginas/contato.html">Contato</a>
+</nav>
+
+
   </header>
 
   <!-- =========================================================
@@ -55,7 +62,7 @@
       poster="/video/cafezinho.mp4"
       aria-hidden="true"
     >
-      <source id="fonteVideoBanner" src="/video/cafezinho.mp4" type="video/mp4">
+      <source id="fonteVideoBanner" src="./video/cafezinho.mp4" type="video/mp4">
       Seu navegador não suporta vídeo em HTML5.
     </video>
 
@@ -65,18 +72,18 @@
     <!-- Conteúdo que aparece acima do vídeo. -->
     <div class="home_intro-conteudo">
       <h2>Bem-Vindo ao Aroma de Café!</h2>
-      <a href="#cardapio" class="botao">Ver cardápio</a>
+      <a href="#cardapio" class="botao">Os mais pedidos</a>
     </div>
   </section>
 
   <!-- Cardápio com cards simples -->
   <section id="cardapio" class="secao">
-    <h2>Cardápio</h2>
+    <h2>Os mais pedidos</h2>
     <p class="subtitulo">Clique em um item para destacar o produto.</p>
 
     <div class="grade-cardapio">
       <article class="card produto">
-        <img src="img/cappucino.jpg" alt="Cappuccino">
+        <img src="./img/cappucino (1).jpg" alt="Cappuccino">
         <h3>Cappuccino</h3>
         <p>Café com leite cremoso e espuma.</p>
         <strong>R$ 12,00</strong>
@@ -122,61 +129,82 @@
   </section>
 
   <!-- Seção institucional -->
+    <!-- Seção Institucional - Sobre a Cafeteria -->
   <section id="sobre" class="secao-clara">
 
-    <h2>Sobre a Cafeteria Aroma de Café</h2>
+    <h2>Nossa essência de ser</h2>
+    <p class="subtitulo">Os pilares fundamentais que guiam o nosso compromisso diário.</p>
 
-    <ul >
-      <li>Consumo consciente</li>
-      <li>Sustentabilidade</li>
-      <li>Impacto Social</li>
+    <!-- Lista estruturada com os textos sugeridos integrados -->
+    <ul class="lista-essencia">
+      <li>
+        <strong>Consumo consciente:</strong> Incentivamos escolhas que respeitam o tempo da natureza, estimulando o consumo de produtos que geram bem-estar de ponta a ponta na cadeia do café.
+      </li>
+      <li>
+        <strong>Sustentabilidade:</strong> Nosso compromisso vai além do discurso, atuando diretamente na redução de resíduos plásticos e na destinação correta da borra de café para compostagem orgânica.
+      </li>
+      <li>
+        <strong>Impacto Social:</strong> Toda a nossa equipe de funcionários é contratada diretamente no nosso bairro, e nossos grãos de alta qualidade e rastreáveis vêm de pequenos produtores parceiros locais.
+      </li>
     </ul>
+
   </section>
 
-  <!-- Formulário para integração com JavaScript -->
-  <section id="contato" class="contato">
-    <h2>Contato</h2>
-    <p class="subtitulo">Querendo conhecer melhor o nosso projeto, patrocinar, colaborar?</p>
-    <h3 class="Paragrafo2Contato">Entre em contato conosco</h3>
 
-    <form id="formContato" class="formulario">
+      <!-- Seção de Depoimentos Atualizada com Fotos -->
+  <section id="depoimentos" class="secao">
+    <h2>O que Dizem Nossos Clientes</h2>
+    <p class="subtitulo">A opinião de quem compartilha do nosso amor por café e pelo planeta.</p>
+    
+    <div class="grade-cardapio">
+      
+      <!-- Card 1 -->
+      <article class="card">
+        <div class="cliente-topo">
+          <!-- Foto do cliente -->
+          <img src="./img/larissa.png" alt="Foto de Larissa Silva" class="foto-perfil">
+          <div>
+            <h3>Larissa Silva</h3>
+            <p class="estrelas">⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+        <p class="depoimento-texto">
+          "O melhor cappuccino da região! Além do sabor incrível, adoro saber que a borra de café é totalmente reciclada e destinada à compostagem."
+        </p>
+      </article>
 
-    <label for="nome">Nome</label>
-    <input
-        type="text"
-        id="nome"
-        name="nome"
-        placeholder="Digite seu nome"
+      <!-- Card 2 -->
+      <article class="card">
+        <div class="cliente-topo">
+          <img src="./img/thiago.jpg" alt="Foto de Thiago Santos" class="foto-perfil">
+          <div>
+            <h3>Thiago Santos</h3>
+            <p class="estrelas">⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+        <p class="depoimento-texto">
+          "Excelente atendimento e ambiente acolhedor. Os copos de papel biodegradáveis para viagem são uma iniciativa fantástica que todos deviam adotar."
+        </p>
+      </article>
 
-    >
+      <!-- Card 3 -->
+      <article class="card">
+        <div class="cliente-topo">
+          <img src="./img/mariana.jpg" alt="Foto de Mariana Costa" class="foto-perfil">
+          <div>
+            <h3>Mariana Costa</h3>
+            <p class="estrelas">⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+        <p class="depoimento-texto">
+          "Café de altíssima qualidade com um propósito lindo de apoio aos pequenos produtores rurais. Sou fã do projeto e super recomendo!"
+        </p>
+      </article>
 
-    <label for="email">E-mail</label>
-    <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="Digite seu e-mail"
- 
-    >
-
-    <label for="mensagem">Mensagem</label>
-    <textarea
-        id="mensagem"
-        name="mensagem"
-        rows="5"
-        placeholder="Digite sua mensagem"
-
-    ></textarea>
-
-    <button type="submit" class="botao">
-        Enviar mensagem
-    </button>
-
-</form>
-
-    <!-- O JavaScript irá escrever mensagens de retorno neste parágrafo -->
-    <p id="respostaFormulario" class="resposta"></p>
+    </div>
   </section>
+
+
 
   <footer class="rodape">
     <p>Projeto Aroma de Café | © Direitos Reservados</p>

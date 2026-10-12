@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projetos Sociais - Aroma de Café</title>
+
+  <!-- Arquivo CSS principal do projeto -->
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- Cabeçalho fixo com o menu corrigido de 10 páginas -->
+  <header class="topo">
+    <h1>Aroma de Café</h1>
+    <button id="botaoMenu" class="botao-menu">☰</button>
+    <nav id="menu" class="menu">
+  <!-- O "../" faz o navegador voltar para a raiz para achar a Home -->
+  <a href="../index.html">Início</a>
+  
+  <!-- Como já estão na pasta paginas, chamam o arquivo direto -->
+  <a href="cardapio.html">Cardápio</a>
+  <a href="galeria.html">Galeria</a>
+  <a href="noticias.html">Notícias</a>
+  <a href="midias.html">Mídias</a>
+  <a href="sustentabilidade.html">Sustentabilidade</a>
+  <a href="projetos.html">Projetos Sociais</a>
+  <a href="orcamento.html">Orçamento</a>
+  <a href="sobre.html">Sobre</a>
+  <a href="contato.html">Contato</a>
+</nav>
+  </header>
+
+  <!-- Banner de Introdução com Imagem de Impacto Única -->
+  <!-- Utilizamos a classe "banner-alinhado-fim" para repetir o efeito de sucesso da outra tela -->
+  <section class="home_intro banner-projetos banner-alinhado-fim">
+    <img 
+      src="../img/ciclo.jpeg" 
+      alt="Pequenos produtores trabalhando juntos na colheita de café em uma plantação sustentável" 
+      class="home_intro-video"
+      aria-hidden="true"
+    >
+    <div class="home_intro-overlay" aria-hidden="true"></div>
+
+    <div class="home_intro-conteudo">
+      <h2>Da Fazenda à Xícara</h2>
+      <p>Nosso compromisso social acompanha cada etapa da jornada que dá vida ao nosso café especial.</p>
+    </div>
+  </section>
+
+  <!-- Seção da Linha do Tempo / Ciclo Produtivo Humano -->
+  <section id="ciclo-produtivo" class="secao">
+    <h2>Nosso Ciclo de Impacto</h2>
+    <p class="subtitulo">Apoiamos e valorizamos as pessoas que fazem o seu café acontecer diariamente.</p>
+
+    <!-- Reaproveitando a estrutura de grade-cardapio que vocês criaram -->
+    <div class="grade-cardapio">
+      
+      <!-- Etapa 1: Fazenda -->
+      <article class="card etapa-ciclo">
+        <img src="../img/cultivo.jpg" alt="Plantação e colheita cuidadosa do café por produtores locais">
+        <h3>1. Cultivo e Colheita</h3>
+        <p>Valorizamos o pequeno produtor e cooperativas locais no campo, pagando um preço justo e incentivando técnicas de cultivo ecológicas.</p>
+      </article>
+
+      <!-- Etapa 2: Processamento e Torra -->
+      <article class="card etapa-ciclo">
+        <img src="../img/torradeira.jpg" alt="Mestre de torra monitorando o ponto dos grãos de café">
+        <h3>2. Torra Artesanal</h3>
+        <p>O café é torrado localmente com controle rígido de resíduos, gerando empregos na nossa região e garantindo o máximo frescor e qualidade.</p>
+      </article>
+
+      <!-- Etapa 3: Preparo e Atendimento na Cafeteria -->
+      <article class="card etapa-ciclo">
+        <img src="../img/barista.jpg" alt="Funcionário servindo café em copo de papel biodegradável para o cliente">
+        <h3>3. Consumo e Inclusão</h3>
+        <p>Nossos baristas preparam e servem o café em copos descartáveis de papel biodegradável. Além disso, financiamos cursos de capacitação profissional para jovens da comunidade.</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Rodapé padrão -->
+  <footer class="rodape">
+    <p>Projeto Aroma de Café | © Direitos Reservados</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
