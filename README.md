@@ -1,3 +1,6 @@
+[![License: MIT](https://img.shields.io/bagde/License-MIT-gree.svg)](./LICENSE)
+
+
 # U-UNICID-ADS-CC-ENG-ADS-FRONTEND-2260016-D4-2-2026-M-AROMADECAFE
 # Projeto Aroma de Café 2026 Desenvolvimento Front-End
 
