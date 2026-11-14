@@ -77,3 +77,20 @@ cafés especiais e pessoas com deficiência, priorizando acessibilidade e inclus
 O site contará com as páginas: Início, Sobre, Produtos, Sustentabilidade, Projetos Sociais, Galeria,
 Notícias, Mídias, Contato e Orçamento/Hospedagem. Possuirá menu de navegação, formulário de
 contato, conteúdo educativo, galeria de imagens, notícias e informações institucionais.
+
+
+# 6. Escopo Não Funcional
+Acessibilidade com textos alternativos em imagens, contraste adequado, estrutura semântica
+HTML5 e navegação simples. O site deverá ser responsivo para computadores, tablets e celulares,
+possuir imagens otimizadas e código organizado.
+
+
+# 7. Mapa do Site
+Home → Sobre → Produtos → Sustentabilidade → Projetos Sociais → Galeria → Notícias →
+Mídias → Contato → Orçamento.
+
+
+# 8. Conteúdo e Identidade Visual
+Cores predominantes: marrom, bege e verde. Tipografia: Arial e Franklin Gothic. Tom de
+comunicação amigável, educativo e informativo. Identidade visual inspirada em café, meio
+ambiente e sustentabilidade.
