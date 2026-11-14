@@ -119,3 +119,15 @@ integrantes e curva de aprendizado das tecnologias.
 O projeto será considerado concluído quando possuir navegação funcional, estrutura semântica
 HTML5, formulário de contato, conteúdo relacionado à sustentabilidade e impacto social, recursos
 visuais adequados, CSS aplicado e acessibilidade básica.
+
+
+# Funcionalidades do Site:
+
+* Implementação das funções de acessibilidade
+* Área dedicada a contribuição financeira e apoio ás iniciativas do projeto
+* Página dedicada para o suporte e dúvidas
+* Página dedicada a informações, compras, assuntos e novidades relacionadas a parte de sustentabilidade
+* Integração com vídeos, links de contato, suporte a áudios e conteúdos incorporados
+* Design totalmente responsivo para todo tipo de dispositivo
+* Adaptação completa de tela para layouts, celulares, notebooks, tablets, entre outros
+* Menu que facilitam a navegação e o acesso rápido para as seções de compras, contatos e notícias
