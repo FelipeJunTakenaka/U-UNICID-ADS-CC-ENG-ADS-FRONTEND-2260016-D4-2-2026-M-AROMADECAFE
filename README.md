@@ -4,6 +4,7 @@ Projeto Aroma de Café desenvolvido para a disciplina de Desenvolvimento Front-e
 Link de acesso ao projeto pelo Railway: aromadecafe.up.railway.app
 
 # Sobre o Projeto:
-O objetivo é informar e conscientizar os visitantes sobre como a produção e o consumo de café podem caminhar junto com a preservação ambiental
+O objetivo é informar e conscientizar os visitantes sobre como a produção e o consumo de café podem caminhar junto com a preservação ambiental,
+destacando temas cultivo sustentável, reaproveitamento de resíduos e consumo responsável.
 
 
