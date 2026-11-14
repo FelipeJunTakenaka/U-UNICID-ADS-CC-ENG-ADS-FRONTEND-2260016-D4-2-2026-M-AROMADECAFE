@@ -94,3 +94,23 @@ Mídias → Contato → Orçamento.
 Cores predominantes: marrom, bege e verde. Tipografia: Arial e Franklin Gothic. Tom de
 comunicação amigável, educativo e informativo. Identidade visual inspirada em café, meio
 ambiente e sustentabilidade.
+
+
+# 9. Tecnologias e Ferramentas
+HTML5, CSS3, Visual Studio Code, navegadores modernos e recursos de validação de código.
+
+
+# 10. Cronograma e Divisão de Tarefas
+Planejamento do projeto, desenvolvimento HTML, desenvolvimento CSS, testes, correções e
+entrega final. As responsabilidades serão distribuídas entre os integrantes da equipe.
+
+
+# 11. Riscos e Restrições
+Limitação de tempo, dificuldades técnicas, integração entre páginas, disponibilidade dos
+integrantes e curva de aprendizado das tecnologias.
+
+
+# 12. Critérios de Aceitação
+O projeto será considerado concluído quando possuir navegação funcional, estrutura semântica
+HTML5, formulário de contato, conteúdo relacionado à sustentabilidade e impacto social, recursos
+visuais adequados, CSS aplicado e acessibilidade básica.
