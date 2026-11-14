@@ -11,7 +11,7 @@ aromadecafe.up.railway.app
 https://github.com/FelipeJunTakenaka/U-UNICID-ADS-CC-ENG-ADS-FRONTEND-2260016-D4-2-2026-M-AROMADECAFE
 
 # Escopo do projeto Aroma de Café:
-1. IdentificaçãoNome do Projeto: Cafeteria Aroma de Café
+* 1. IdentificaçãoNome do Projeto: Cafeteria Aroma de Café
 Integrantes: Ednalvo Jose da Silva, Lucas Santos Silva, Renan Lopes, Felipe Jun, Gabriel Camilo,
 Rhian Khelv, Priscila da Silva Souza e Geovane Santos.
 Disciplina: Front-End
