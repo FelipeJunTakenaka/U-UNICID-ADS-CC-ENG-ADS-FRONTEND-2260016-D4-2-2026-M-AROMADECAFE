@@ -3,3 +3,5 @@
 
 # Sobre o Projeto:
 Aroma de Café é uma aplicação web dedicada á venda de cafés sustentáveis e a conscientização ambiental.
+# Site publicado:
+aromadecafe.up.railway.app
