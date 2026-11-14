@@ -66,3 +66,14 @@ uma cafeteria fictícia.
 • Valorizar pequenos produtores de café.
 
 • Conscientizar sobre redução de resíduos e reciclagem.
+
+
+# 4. Público-Alvo
+Jovens e adultos interessados em sustentabilidade, consumidores conscientes, apreciadores de
+cafés especiais e pessoas com deficiência, priorizando acessibilidade e inclusão.
+
+
+# 5. Escopo Funcional
+O site contará com as páginas: Início, Sobre, Produtos, Sustentabilidade, Projetos Sociais, Galeria,
+Notícias, Mídias, Contato e Orçamento/Hospedagem. Possuirá menu de navegação, formulário de
+contato, conteúdo educativo, galeria de imagens, notícias e informações institucionais.
