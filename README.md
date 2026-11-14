@@ -42,3 +42,11 @@ Professor: Paulo Fratta
 
 
 Data: 22/09/2026.
+
+# 2. Contexto e Justificativa
+O projeto foi desenvolvido para conscientizar a sociedade sobre a importância da sustentabilidade,
+do consumo consciente e do impacto social positivo. A proposta demonstra como empresas
+podem contribuir para a preservação ambiental por meio de práticas responsáveis, reciclagem e
+apoio a pequenos produtores de café
+
+
