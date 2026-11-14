@@ -16,8 +16,23 @@ https://github.com/FelipeJunTakenaka/U-UNICID-ADS-CC-ENG-ADS-FRONTEND-2260016-D4
  Nome do Projeto: Cafeteria Aroma de Café
 
 
-Integrantes: Ednalvo Jose da Silva, Lucas Santos Silva, Renan Lopes, Felipe Jun, Gabriel Camilo,
-Rhian Khelv, Priscila da Silva Souza e Geovane Santos.
+Integrantes:
+
+Ednalvo Jose da Silva
+
+Lucas Santos Silva
+
+Renan Lopes
+
+Felipe Jun
+
+Gabriel Camilo
+
+Rhian Khelv
+
+Priscila da Silva Souza
+
+ Geovane Santos
 Disciplina: Front-End
 Professor: Paulo Fratta
 Data: 22/09/2026.
