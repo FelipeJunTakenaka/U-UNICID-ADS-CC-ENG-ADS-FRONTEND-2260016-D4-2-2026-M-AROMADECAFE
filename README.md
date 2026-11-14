@@ -50,3 +50,12 @@ podem contribuir para a preservação ambiental por meio de práticas responsáv
 apoio a pequenos produtores de café
 
 
+# 3. Objetivos
+# Objetivo Geral: Promover informações sobre sustentabilidade e consumo consciente através de
+uma cafeteria fictícia.
+# Objetivos Específicos:
+• Incentivar o consumo consciente.
+• Divulgar práticas sustentáveis.
+• Apresentar ações de impacto social.
+• Valorizar pequenos produtores de café.
+• Conscientizar sobre redução de resíduos e reciclagem.
