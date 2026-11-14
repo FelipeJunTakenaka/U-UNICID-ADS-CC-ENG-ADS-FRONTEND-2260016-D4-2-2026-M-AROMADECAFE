@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orçamento | Aroma de Café</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: #f5eee5;
+    color: #3e2723;
+}
+
+header {
+    background: #4e342e;
+    color: white;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin-top: 8px;
+    color: #e6cdb5;
+}
+
+.container {
+    max-width: 850px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.card {
+    background: white;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px #00000012;
+}
+
+h2 {
+    margin-bottom: 10px;
+    color: #5d4037;
+}
+
+.descricao {
+    margin-bottom: 25px;
+    color: #795548;
+}
+
+.grupo {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #d7c4b5;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    background: #fffdfb;
+}
+
+input:focus, select:focus, textarea:focus {
+    border-color: #795548;
+}
+
+.produtos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.produto {
+    background: #faf5ef;
+    padding: 15px;
+    border-radius: 10px;
+    border: 1px solid #eaded2;
+}
+
+.produto label {
+    font-size: 14px;
+}
+
+.produto input {
+    margin-top: 8px;
+}
+
+.total {
+    background: #4e342e;
+    color: white;
+    padding: 22px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.total h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+#valorTotal {
+    font-size: 30px;
+    font-weight: bold;
+    color: #ffdbad;
+}
+
+button {
+    width: 100%;
+    padding: 16px;
+    border: none;
+    border-radius: 8px;
+    background: #795548;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #4e342e;
+    transform: translateY(-2px);
+}
+
+footer {
+    text-align: center;
+    padding: 25px;
+    color: #795548;
+}
+
+@media(max-width: 600px) {
+    .produtos {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 22px;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>☕ AROMA DE CAFÉ</h1>
+    <p>O sabor especial de cada momento!</p>
+</header>
+
+<div class="container">
+<div class="card">
+
+    <h2>Solicite seu orçamento</h2>
+    <p class="descricao">
+        Preencha seus dados e escolha nossos produtos.
+        Será um prazer atender você!
+    </p>
+
+    <form id="formOrcamento">
+
+        <div class="grupo">
+            <label>Nome completo</label>
+            <input type="text" id="nome" placeholder="Digite seu nome" required>
+        </div>
+
+        <div class="grupo">
+            <label>Telefone / WhatsApp</label>
+            <input type="tel" id="telefone" placeholder="(00) 00000-0000" required>
+        </div>
+
+        <div class="grupo">
+            <label>E-mail</label>
+            <input type="email" id="email" placeholder="seuemail@email.com" required>
+        </div>
+
+        <div class="grupo">
+            <label>Tipo de pedido</label>
+            <select id="tipo">
+                <option>Pedido individual</option>
+                <option>Encomenda para evento</option>
+                <option>Coffee break empresarial</option>
+                <option>Festa e comemoração</option>
+            </select>
+        </div>
+
+        <h2>Escolha seus produtos</h2>
+
+        <div class="produtos">
+
+            <div class="produto">
+                <label>☕ Café expresso - R$ 6,00</label>
+                <input type="number" min="0" step="1" value="0" data-preco="6">
+            </div>
+
+            <div class="produto">
+                <label>🥛 Cappuccino - R$ 12,00</label>
+                <input type="number" min="0" step="1" value="0" data-preco="12">
+            </div>
+
+            <div class="produto">
+                <label>🥐 Croissant - R$ 10,00</label>
+                <input type="number" min="0" step="1" value="0" data-preco="10">
+            </div>
+
+            <div class="produto">
+                <label>🍰 Fatia de bolo - R$ 9,00</label>
+                <input type="number" min="0" step="1" value="0" data-preco="9">
+            </div>
+
+            <div class="produto">
+                <label>🧀 Pão de queijo - R$ 5,00</label>
+                <input type="number" min="0" step="1" value="0" data-preco="5">
+            </div>
+
+            <div class="produto">
+                <label>🥪 Sanduíche - R$ 15,00</label>
+                <input type="number" min="0" step="1" value="0" data-preco="15">
+            </div>
+
+        </div>
+
+        <div class="grupo">
+            <label>Data desejada</label>
+            <input type="date" id="data">
+        </div>
+
+        <div class="grupo">
+            <label>Observações</label>
+            <textarea id="observacoes" rows="4"
+            placeholder="Conte mais detalhes sobre seu pedido..."></textarea>
+        </div>
+
+        <div class="total">
+            <h3>Valor estimado do orçamento</h3>
+            <div id="valorTotal">R$ 0,00</div>
+        </div>
+
+        <button type="submit">
+            Solicitar orçamento pelo WhatsApp
+        </button>
+
+    </form>
+</div>
+</div>
+
+<footer>
+    <p>© 2026 Aroma de Café - Todos os direitos reservados.</p>
+    <p>Feito com ☕ e carinho!</p>
+</footer>
+
+<script>
+
+const campos = document.querySelectorAll('[data-preco]');
+const valorTotal = document.getElementById('valorTotal');
+
+function calcularTotal() {
+    let total = 0;
+
+    campos.forEach(campo => {
+        let quantidade = Math.max(0, Math.floor(Number(campo.value) || 0));
+        let preco = Number(campo.dataset.preco);
+
+        total += quantidade * preco;
+    });
+
+    valorTotal.textContent = total.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+    });
+
+    return total;
+}
+
+campos.forEach(campo => {
+    campo.addEventListener('input', calcularTotal);
+});
+
+document.getElementById('formOrcamento')
+.addEventListener('submit', function(event) {
+
+    event.preventDefault();
+
+    const nome = document.getElementById('nome').value;
+    const telefone = document.getElementById('telefone').value;
+    const email = document.getElementById('email').value;
+    const tipo = document.getElementById('tipo').value;
+    const data = document.getElementById('data').value;
+    const observacoes = document.getElementById('observacoes').value;
+
+    let total = calcularTotal();
+
+    if (total <= 0) {
+        alert('Selecione pelo menos um produto!');
+        return;
+    }
+
+    let mensagem = `Olá! Gostaria de solicitar um orçamento na Aroma de Café.
+
+Nome: ${nome}
+Telefone: ${telefone}
+E-mail: ${email}
+Tipo de pedido: ${tipo}
+Data desejada: ${data || 'Não informada'}
+
+PRODUTOS:`;
+
+    campos.forEach(campo => {
+        const quantidade = Math.max(0, Math.floor(Number(campo.value) || 0));
+
+        if (quantidade > 0) {
+            const produto = campo.parentElement
+                .querySelector('label').textContent;
+
+            mensagem += `\n${produto} - Quantidade: ${quantidade}`;
+        }
+    });
+
+    mensagem += `
+
+Valor estimado: ${total.toLocaleString('pt-BR', {
+        style: 'currency',
+        currency: 'BRL'
+    })}
+
+Observações: ${observacoes || 'Nenhuma'}
+
+Aguardo o retorno. Obrigado!`;
+
+    // COLOQUE O NÚMERO DA CAFETERIA AQUI
+    const whatsapp = '5500000000000';
+
+    const link = `https://wa.me/${whatsapp}?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(link, '_blank');
+
+});
+
+</script>
+
+</body>
+</html>
