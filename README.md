@@ -1,4 +1,6 @@
-[![License: MIT](https://img.shields.io/bagde/License-MIT-gree.svg)](./LICENSE)
+[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
+[![Website Status](https://img.shields.io/badge/website-up-success.svg)](https://aromadecafe.up.railway.app)
+[![W3C Validated](https://img.shields.io/badge/w3c-validated-brightgreen.svg)](https://validator.w3.org/)
 
 
 # U-UNICID-ADS-CC-ENG-ADS-FRONTEND-2260016-D4-2-2026-M-AROMADECAFE
