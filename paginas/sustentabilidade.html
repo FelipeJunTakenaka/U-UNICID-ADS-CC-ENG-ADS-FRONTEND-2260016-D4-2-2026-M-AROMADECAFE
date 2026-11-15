@@ -6,14 +6,28 @@
   <title>Sustentabilidade - Aroma de Café</title>
 
   <!-- Arquivo CSS principal do projeto -->
-  <link rel="stylesheet" href="../css/style1.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
-<body>
+<body class="pagina-acessivel">
+
+  <a class="link-pular-conteudo" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <!-- Controles comuns de acessibilidade: contraste, texto e leitura em voz alta -->
+  <nav class="barra-acessibilidade" aria-label="Opções de acessibilidade">
+    <span>Acessibilidade:</span>
+    <button id="diminuirTexto" type="button" aria-label="Diminuir tamanho do texto">A-</button>
+    <button id="aumentarTexto" type="button" aria-label="Aumentar tamanho do texto">A+</button>
+    <button id="alternarContraste" type="button" aria-pressed="false">Alto contraste</button>
+    <button id="ouvirPagina" type="button">Ouvir página</button>
+    <button id="pararLeitura" type="button" disabled>Parar leitura</button>
+    <a href="https://vlibras.gov.br/doc/widget/installation/webpageintegration.html" target="_blank" rel="noopener noreferrer">Ajuda do VLibras</a>
+    <span id="statusAcessibilidade" class="texto-somente-leitor" role="status" aria-live="polite"></span>
+  </nav>
 
   <!-- Cabeçalho fixo  -->
-  <header class="topo">
+  <header class="topo topo-acessibilidade">
     <h1>Aroma de Café</h1>
-    <button id="botaoMenu" class="botao-menu">☰</button>
+    <button id="botaoMenu" class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
     <nav id="menu" class="menu">
   <!-- O "../" faz o navegador voltar para a raiz para achar a Home -->
   <a href="../index.html">Início</a>
@@ -32,12 +46,12 @@
   </header>
 
   <!-- Banner de Introdução da Página de Sustentabilidade -->
+  <main id="conteudo-principal" tabindex="-1">
   <section class="home_intro banner-sustentavel banner-alinhado-fim">
     <img 
       src="../img/sustentabilidade.jpg" 
       alt="Mão de um produtor segurando brotos e frutos de café" 
       class="home_intro-video"
-      aria-hidden="true"
     >
     <div class="home_intro-overlay" aria-hidden="true"></div>
     <div class="home_intro-conteudo">
@@ -80,10 +94,13 @@
   </section>
 
   <!-- Rodapé (Mantido do original) -->
+  </main>
+
   <footer class="rodape">
     <p>Projeto Aroma de Café | © Direitos Reservados</p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js" async></script>
+  <script src="../js/script.js" defer></script>
 </body>
 </html>

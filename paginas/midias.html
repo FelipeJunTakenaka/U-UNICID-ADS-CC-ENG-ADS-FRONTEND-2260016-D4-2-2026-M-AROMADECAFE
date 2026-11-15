@@ -3,87 +3,299 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sustentabilidade - Aroma de Café</title>
-
-  <!-- Arquivo CSS principal do projeto -->
-  <link rel="stylesheet" href="../css/style3.css">
+  <meta name="description" content="Vídeos e conteúdos sobre sustentabilidade, agricultura familiar e cultura do café.">
+  <title>Mídias | Aroma de Café</title>
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/paginas.css">
 </head>
-<body>
+<body class="pagina-acessivel">
 
-  <!-- Cabeçalho fixo  -->
-  <header class="topo">
+  <!-- INÍCIO: recursos de acessibilidade compartilhados.
+       O atalho leva ao conteúdo principal; os controles ajustam o texto,
+       alternam o contraste e iniciam/interrompem a leitura em voz alta. -->
+  <a class="link-pular-conteudo" href="#conteudo-principal">Pular para o conteúdo</a>
+  <nav class="barra-acessibilidade" aria-label="Opções de acessibilidade">
+    <span>Acessibilidade:</span>
+    <button id="diminuirTexto" type="button" aria-label="Diminuir tamanho do texto">A-</button>
+    <button id="aumentarTexto" type="button" aria-label="Aumentar tamanho do texto">A+</button>
+    <button id="alternarContraste" type="button" aria-pressed="false">Alto contraste</button>
+    <button id="ouvirPagina" type="button">Ouvir página</button>
+    <button id="pararLeitura" type="button" disabled>Parar leitura</button>
+    <a href="https://vlibras.gov.br/doc/widget/installation/webpageintegration.html" target="_blank" rel="noopener noreferrer">Ajuda do VLibras</a>
+    <span id="statusAcessibilidade" class="texto-somente-leitor" role="status" aria-live="polite"></span>
+  </nav>
+  <!-- FIM: recursos de acessibilidade compartilhados. -->
+
+  <!-- INÍCIO: cabeçalho e navegação acessíveis.
+       O botão informa o estado do menu e controla sua abertura em telas menores. -->
+  <header class="topo topo-acessibilidade">
     <h1>Aroma de Café</h1>
-    <button id="botaoMenu" class="botao-menu">☰</button>
-    <nav id="menu" class="menu">
-  <!-- O "../" faz o navegador voltar para a raiz para achar a Home -->
-  <a href="../index.html">Início</a>
-  
-  <!-- Como já estão na pasta paginas, chamam o arquivo direto -->
-  <a href="cardapio.html">Cardápio</a>
-  <a href="galeria.html">Galeria</a>
-  <a href="noticias.html">Notícias</a>
-  <a href="midias.html">Mídias</a>
-  <a href="sustentabilidade.html">Sustentabilidade</a>
-  <a href="projetos.html">Projetos Sociais</a>
-  <a href="orcamento.html">Orçamento</a>
-  <a href="sobre.html">Sobre</a>
-  <a href="contato.html">Contato</a>
-</nav>
+
+    <button type="button" id="botaoMenu" class="botao-menu" aria-expanded="false" aria-controls="menu" aria-label="Abrir menu">
+      ☰
+    </button>
+
+    <nav id="menu" class="menu" aria-label="Navegação principal">
+      <a href="../index.html">Início</a>
+      <a href="cardapio.html">Cardápio</a>
+      <a href="galeria.html">Galeria</a>
+      <a href="noticias.html">Notícias</a>
+      <a href="midias.html" aria-current="page">Mídias</a>
+      <a href="sustentabilidade.html">Sustentabilidade</a>
+      <a href="projetos.html">Projetos Sociais</a>
+      <a href="orcamento.html">Orçamento</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
   </header>
+  <!-- FIM: cabeçalho e navegação acessíveis. -->
 
-  <!-- Banner de Introdução da Página de Sustentabilidade -->
-  <section class="home_intro banner-sustentavel banner-alinhado-fim">
-    <img 
-      src="../img/midia.jpg" 
-      alt="Mão de um produtor segurando brotos e frutos de café" 
-      class="home_intro-video"
-      aria-hidden="true"
-    >
-    <div class="home_intro-overlay" aria-hidden="true"></div>
-    <div class="home_intro-conteudo">
-      <h2>O mundo das mídias</h2>
-      <p>Comunicação, informação e tecnologia no nosso dia a dia.</p>
-    </div>
-  </section>
+  <!-- INÍCIO: conteúdo principal; recebe o foco pelo atalho de pular conteúdo. -->
+  <main id="conteudo-principal" tabindex="-1">
 
-  <!-- Conteúdo Educativo e Pilares Ambientais -->
-  <section id="sustentabilidade" class="secao">
-    <h2>Principais tipos de mídias</h2>
-    <p class="subtitulo">Explorando as diversas formas de transmitir informação no dia a dia.</p>
+    <!-- 1. Banner Principal -->
+    <section class="pagina-banner midias-banner" aria-labelledby="titulo-midias">
+      <div class="pagina-banner-conteudo">
+        <span class="etiqueta">CONTEÚDO EDUCATIVO</span>
+        <h2 id="titulo-midias">Aprenda, inspire-se e transforme seus hábitos.</h2>
+        <p>Assista a vídeos selecionados sobre sustentabilidade, agricultura familiar, reaproveitamento da borra de café e a jornada do grão até a sua xícara.</p>
+      </div>
+    </section>
 
-    <!-- Grade de pilares ecológicos integrada ao ecossistema visual com suporte a imagens -->
-    <div class="grade-cardapio">
-      
-      <!-- Card 1: Produtores -->
-      <article class="card pilar-ecologico">
-        <img src="../img/tv.jpg" alt="Imagem de uma televisão">
-        <h3>📺 Mídia tradicional</h3>
-        <p>Inclui televisão, rádio, jornais e revistas. É utilizada para divulgar notícias,informações e programas de entretenimento.</p>
-      </article>
+    <!-- 2. Seção de Vídeos Completos (Formato Horizontal 16:9) -->
+    <section class="pagina-secao secao-videos" aria-labelledby="titulo-videos-completos">
+      <div class="container-midias">
+        <span class="produto-categoria">SUSTENTABILIDADE E HISTÓRIA</span>
+        <h2 id="titulo-videos-completos">Vídeos e Documentários</h2>
+        <p class="subtitulo-esquerda">Aprofunde seus conhecimentos sobre consumo consciente, impacto ambiental e a cultura do café.</p>
 
-      <!-- Card 2: Resíduos -->
-      <article class="card pilar-ecologico">
-        <img src="../img/celular.png" alt="Imagem de uma natureza limpa representada em um celular">
-        <h3>📱 Mídia digital</h3>
-        <p>Inclui sites, blogs, aplicativos e redes sociais. Permite compartilhar conteúdos rapidamente pela internet.
-        </p>
-      </article>
+        <div class="grade-videos-horizontais">
 
-      <!-- Card 3: Compostagem -->
-      <article class="card pilar-ecologico">
-        <img src="../img/jornal.jpg" alt="Homem lendo um jornal">
-        <h3>📢 Mídia impressa</h3>
-        <p>É formada por materiais impressos, como livros, cartazes, panfletos, jornais e revistas.</p>
-      </article>
+          <!-- INÍCIO: vídeo HTML5 com controles personalizados.
+               Inclui os controles nativos, reprodução por botão e salto para 1:30. -->
+          <article class="card video-card">
+            <div class="video-wrapper-16-9">
+              <video
+                id="videoAula"
+                controls
+                playsinline
+                preload="metadata"
+                poster="../img/midia.jpg"
+                aria-labelledby="titulo-video-aula"
+                aria-describedby="descricao-video-aula">
+                <source src="../video/cafezinho.mp4" type="video/mp4">
+                Seu navegador não suporta a reprodução deste vídeo.
+              </video>
+            </div>
+            <div class="video-info">
+              <span class="produto-categoria">VÍDEO HTML5</span>
+              <h3 id="titulo-video-aula">Um momento com café</h3>
+              <p id="descricao-video-aula">Use os controles do vídeo ou os botões personalizados. O salto para 1 minuto e 30 segundos fica disponível se o vídeo tiver essa duração.</p>
+              <div class="controles-video-personalizados" role="group" aria-label="Controles personalizados do vídeo">
+                <button id="btnPlayPause" type="button" aria-pressed="false">▶ Reproduzir vídeo</button>
+                <button id="btnPular90" type="button" disabled>Pular para 1:30</button>
+              </div>
+              <p id="estadoVideoAula" class="estado-video-aula" role="status" aria-live="polite"></p>
+            </div>
+          </article>
+          <!-- FIM: vídeo HTML5 com controles personalizados. -->
 
-    </div>
-  </section>
+          <!-- Vídeo 1 -->
+          <article class="card video-card">
+            <div class="video-wrapper-16-9">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/BtvjKez0KVY?start=40"
+                title="Borra de café como adubo - Aprenda como usar"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <span class="produto-categoria">RECICLAGEM ORGÂNICA</span>
+              <h3>Borra de Café como Adubo: Aprenda como Usar</h3>
+              <p>A engenheira agrônoma Alessandra Fernandes explica como aproveitar a borra de café rica em nitrogênio nas plantas e na composteira sem prejudicar o solo.</p>
+              <a href="https://www.youtube.com/watch?v=BtvjKez0KVY&amp;t=40s" target="_blank" rel="noopener noreferrer" class="botao-detalhes">
+                Assistir no YouTube &rarr;
+              </a>
+            </div>
+          </article>
 
-  <!-- Rodapé (Mantido do original) -->
+          <!-- Vídeo 2 -->
+          <article class="card video-card">
+            <div class="video-wrapper-16-9">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/JdiGrv8h6hg?start=4"
+                title="Sustentabilidade - Consumo Consciente GIC"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <span class="produto-categoria">CONSUMO CONSCIENTE</span>
+              <h3>Sustentabilidade e Consumo Consciente</h3>
+              <p>Descubra seis perguntas essenciais para fazer antes de comprar, usar e descartar produtos, ajudando a reduzir resíduos e fortalecer o comércio local.</p>
+              <a href="https://www.youtube.com/watch?v=JdiGrv8h6hg&amp;t=4s" target="_blank" rel="noopener noreferrer" class="botao-detalhes">
+                Assistir no YouTube &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Vídeo 3 -->
+          <article class="card video-card">
+            <div class="video-wrapper-16-9">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/07q6kKH10Hs"
+                title="O que o copo descartável tem a ver com as mudanças climáticas?"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <span class="produto-categoria">REDUÇÃO DE RESÍDUOS</span>
+              <h3>O que o Copo Descartável tem a ver com as Mudanças Climáticas?</h3>
+              <p>A pesquisadora Agatha Tommasi mostra como o uso diário de copos descartáveis impacta o meio ambiente e por que repensar o consumo vai além da reciclagem.</p>
+              <a href="https://www.youtube.com/watch?v=07q6kKH10Hs" target="_blank" rel="noopener noreferrer" class="botao-detalhes">
+                Assistir no YouTube &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Vídeo 4 -->
+          <article class="card video-card">
+            <div class="video-wrapper-16-9">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/Zu-AjL0REhw"
+                title="Dos Grãos à sua Xícara: A Fascinante História do Café"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <span class="produto-categoria">CULTURA DO CAFÉ</span>
+              <h3>Dos Grãos à sua Xícara: A Fascinante História do Café</h3>
+              <p>Uma animação completa sobre a origem do café na Etiópia, o cultivo nas montanhas de Minas Gerais, a colheita manual e os segredos da torrefação.</p>
+              <a href="https://www.youtube.com/watch?v=Zu-AjL0REhw" target="_blank" rel="noopener noreferrer" class="botao-detalhes">
+                Assistir no YouTube &rarr;
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Seção de Vídeos Curtos / Shorts (Formato Vertical 9:16) -->
+    <section class="pagina-secao secao-shorts" aria-labelledby="titulo-shorts">
+      <div class="container-midias">
+        <span class="produto-categoria">DICAS RÁPIDAS</span>
+        <h2 id="titulo-shorts">Minuto do Café (Shorts)</h2>
+        <p class="subtitulo-esquerda">Conteúdos rápidos sobre agricultura familiar, reaproveitamento e métodos de preparo.</p>
+
+                <div class="grade-videos-shorts">
+
+          <!-- Short 1 -->
+          <article class="card short-card">
+            <div class="video-wrapper-9-16">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/lJbOWscq_rc"
+                title="Pare de jogar a borra de café fora"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <span class="produto-categoria">DICA SUSTENTÁVEL</span>
+              <h3>Pare de Jogar a Borra de Café Fora</h3>
+              <p>Veja como reutilizar a borra seca como adubo para plantas e como esfoliante natural para limpeza doméstica sem riscar metais.</p>
+              <a href="https://www.youtube.com/shorts/lJbOWscq_rc" target="_blank" rel="noopener noreferrer" class="botao-detalhes">
+                Ver no YouTube &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Short 2 -->
+          <article class="card short-card">
+            <div class="video-wrapper-9-16">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/mD7HiC3Jw5M"
+                title="As 5 etapas do processamento de café"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <span class="produto-categoria">PRODUÇÃO</span>
+              <h3>As 5 Etapas do Processamento de Café</h3>
+              <p>Conheça rapidamente a transformação do grão desde a cereja vermelha colhida no pé até a lavagem, secagem e torra.</p>
+              <a href="https://www.youtube.com/shorts/mD7HiC3Jw5M" target="_blank" rel="noopener noreferrer" class="botao-detalhes">
+                Ver no YouTube &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Short 3 -->
+          <article class="card short-card">
+            <div class="video-wrapper-9-16">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/WWiXloQPCe4"
+                title="A Acafeg representa 35 famílias de agricultores familiares de café em Andradas"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <span class="produto-categoria">COMÉRCIO JUSTO</span>
+              <h3>Agricultura Familiar e Certificação Fairtrade</h3>
+              <p>Conheça a Acafeg, associação que reúne 35 famílias produtoras de café em Andradas com foco em qualidade e comércio justo.</p>
+              <a href="https://www.youtube.com/shorts/WWiXloQPCe4" target="_blank" rel="noopener noreferrer" class="botao-detalhes">
+                Ver no YouTube &rarr;
+              </a>
+            </div>
+          </article>
+
+          <!-- Short 4 -->
+          <article class="card short-card">
+            <div class="video-wrapper-9-16">
+              <iframe
+                src="https://www.youtube-nocookie.com/embed/YNHPs9JbpRI"
+                title="Como fazer café coado especial pelo método V60"
+                loading="lazy"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+              </iframe>
+            </div>
+            <div class="video-info">
+              <span class="produto-categoria">PREPARO ESPECIAL</span>
+              <h3>Como Fazer Café Coado Especial (Método V60)</h3>
+              <p>Aprenda uma receita prática e equilibrada para extrair o melhor aroma e sabor dos grãos especiais no método coado V60.</p>
+              <a href="https://www.youtube.com/shorts/YNHPs9JbpRI" target="_blank" rel="noopener noreferrer" class="botao-detalhes">
+                Ver no YouTube &rarr;
+              </a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- FIM: conteúdo principal acessível. -->
+
   <footer class="rodape">
-    <h3>Projeto Aroma de Café | © Direitos Reservados</h3>
+    <p>Projeto Aroma de Café | &copy; Direitos Reservados</p>
   </footer>
 
-  <script src="js/script.js"></script>
+  <!-- INÍCIO: VLibras e funcionalidades compartilhadas.
+       O plugin disponibiliza tradução em Libras; script.js ativa o menu,
+       os controles de acessibilidade e o player HTML5 personalizado. -->
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js" async></script>
+  <script src="../js/script.js" defer></script>
+  <!-- FIM: VLibras e funcionalidades compartilhadas. -->
 </body>
 </html>
