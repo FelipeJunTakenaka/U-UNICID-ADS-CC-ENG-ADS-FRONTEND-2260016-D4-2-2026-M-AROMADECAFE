@@ -26,7 +26,7 @@ html { scroll-behavior: smooth; }
   background: linear-gradient(90deg, rgba(32, 22, 16, .83), rgba(32, 22, 16, .22));
   z-index: -1;
 }
-.cardapio-banner { background-image: url("../img/cafe-gelado.jpg"); }
+.cardapio-banner { background-image: url("../img/cardapio-banner.jpg"); }
 .noticias-banner { background-image: url("../img/cafe-gelado-cremoso.jpg"); }
 .sobre-banner { background-image: url("../img/sobre-banner.jpg"); }
 .midias-banner { background-image: url("../img/midias-banner.jpg"); }
@@ -1113,7 +1113,3 @@ body.alto-contraste .lightbox-ficha p {
   }
 }
 
-@media (prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; }
-}

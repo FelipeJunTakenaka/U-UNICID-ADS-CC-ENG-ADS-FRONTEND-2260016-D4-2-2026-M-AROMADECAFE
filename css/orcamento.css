@@ -213,14 +213,6 @@ body.pagina-acessivel.alto-contraste .orcamento-total {
     grid-template-columns: 1fr;
   }
 }
+/* FIM: ajustes responsivos. */
 
-@media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    scroll-behavior: auto !important;
-    transition-duration: .01ms !important;
-    animation-duration: .01ms !important;
-  }
-}
-/* FIM: ajustes responsivos e respeito à redução de movimento. */
+
