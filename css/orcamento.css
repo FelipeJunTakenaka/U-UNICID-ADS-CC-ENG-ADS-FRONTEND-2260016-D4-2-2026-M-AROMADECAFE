@@ -1,0 +1,226 @@
+/* INÍCIO: estilos próprios da página Orçamento.
+   Usa a paleta compartilhada do site e organiza o formulário em telas grandes e pequenas. */
+.orcamento-secao {
+  padding: 140px 8% 80px;
+  background: #EDE8D0;
+}
+
+.orcamento-container {
+  width: min(100%, 900px);
+  margin: 0 auto;
+}
+
+.orcamento-card {
+  padding: clamp(24px, 5vw, 48px);
+  border: 1px solid #D8CFB6;
+  border-radius: 16px;
+  background: #FFFFFF;
+  box-shadow: 0 8px 28px rgba(43, 29, 22, .08);
+}
+
+.orcamento-card > .produto-categoria {
+  display: inline-block;
+  margin-bottom: 8px;
+}
+
+.orcamento-card h2 {
+  margin-bottom: 10px;
+  color: #6F4E37;
+  font-family: "Franklin Gothic Medium", Arial, sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.5rem);
+  line-height: 1.2;
+}
+
+.orcamento-descricao {
+  margin-bottom: 28px;
+  color: #555555;
+}
+
+.orcamento-form {
+  display: grid;
+  gap: 20px;
+}
+
+.orcamento-grupo label,
+.orcamento-produto label {
+  display: block;
+  margin-bottom: 7px;
+  color: #2B1D16;
+  font-weight: 700;
+}
+
+.orcamento-grupo input,
+.orcamento-grupo select,
+.orcamento-grupo textarea,
+.orcamento-produto input {
+  width: 100%;
+  min-height: 48px;
+  padding: 12px;
+  border: 1px solid #D8CFB6;
+  border-radius: 8px;
+  background: #FAF8F3;
+  color: #2B1D16;
+  font: inherit;
+}
+
+.orcamento-grupo textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+.orcamento-grupo input:focus,
+.orcamento-grupo select:focus,
+.orcamento-grupo textarea:focus,
+.orcamento-produto input:focus {
+  border-color: #4A5B52;
+}
+
+.orcamento-card input.campo-invalido,
+.orcamento-card select.campo-invalido,
+.orcamento-card textarea.campo-invalido {
+  border-color: #B3261E;
+  background: #FFF7F6;
+}
+
+.orcamento-card .erro-campo {
+  display: block;
+  margin-top: 5px;
+  color: #B3261E;
+  font-size: .9rem;
+}
+
+.orcamento-produtos {
+  min-width: 0;
+  padding: 0;
+  border: 0;
+}
+
+.orcamento-produtos legend {
+  margin-bottom: 14px;
+  color: #6F4E37;
+  font-family: "Franklin Gothic Medium", Arial, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.orcamento-grade {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.orcamento-produto {
+  padding: 16px;
+  border: 1px solid #EDE8D0;
+  border-radius: 10px;
+  background: #FAF8F3;
+}
+
+.orcamento-produto label {
+  min-height: 1.6em;
+  font-size: .95rem;
+}
+
+.orcamento-produto input {
+  background: #FFFFFF;
+}
+
+.orcamento-total {
+  padding: 22px;
+  border-radius: 10px;
+  background: #4A5B52;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.orcamento-total h3 {
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.orcamento-total output {
+  display: block;
+  color: #EDE8D0;
+  font-size: clamp(1.8rem, 5vw, 2.3rem);
+  font-weight: 800;
+}
+
+.orcamento-enviar {
+  width: 100%;
+  min-height: 52px;
+  margin: 0;
+}
+
+/* FIM: estilos próprios da página Orçamento. */
+
+/* INÍCIO: alto contraste do formulário de orçamento.
+   Mantém texto, campos, produtos e total legíveis quando o controle é ativado. */
+body.pagina-acessivel.alto-contraste .orcamento-card,
+body.pagina-acessivel.alto-contraste .orcamento-produto {
+  border-color: #FFFF00;
+  background: #000000;
+  color: #FFFF00;
+}
+
+body.pagina-acessivel.alto-contraste .orcamento-card h2,
+body.pagina-acessivel.alto-contraste .orcamento-card p,
+body.pagina-acessivel.alto-contraste .orcamento-card label,
+body.pagina-acessivel.alto-contraste .orcamento-produtos legend,
+body.pagina-acessivel.alto-contraste .orcamento-total,
+body.pagina-acessivel.alto-contraste .orcamento-total output {
+  color: #FFFF00;
+}
+
+body.pagina-acessivel.alto-contraste .orcamento-grupo input,
+body.pagina-acessivel.alto-contraste .orcamento-grupo select,
+body.pagina-acessivel.alto-contraste .orcamento-grupo textarea,
+body.pagina-acessivel.alto-contraste .orcamento-produto input {
+  border-color: #FFFF00;
+  background: #000000;
+  color: #FFFFFF;
+}
+
+body.pagina-acessivel.alto-contraste .orcamento-grupo input::placeholder,
+body.pagina-acessivel.alto-contraste .orcamento-grupo textarea::placeholder {
+  color: #FFFFFF;
+}
+
+body.pagina-acessivel.alto-contraste .orcamento-card input.campo-invalido,
+body.pagina-acessivel.alto-contraste .orcamento-card select.campo-invalido,
+body.pagina-acessivel.alto-contraste .orcamento-card textarea.campo-invalido {
+  border-color: #FFFF00;
+  background: #000000;
+}
+
+body.pagina-acessivel.alto-contraste .orcamento-card .erro-campo {
+  color: #FFFF00;
+}
+
+body.pagina-acessivel.alto-contraste .orcamento-total {
+  border: 1px solid #FFFF00;
+  background: #000000;
+}
+/* FIM: alto contraste do formulário de orçamento. */
+
+/* INÍCIO: ajustes responsivos e respeito à redução de movimento.
+   Empilha os produtos em telas estreitas e reduz animações quando solicitado pelo sistema. */
+@media (max-width: 768px) {
+  .orcamento-secao {
+    padding: 130px 5% 56px;
+  }
+
+  .orcamento-grade {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: .01ms !important;
+    animation-duration: .01ms !important;
+  }
+}
+/* FIM: ajustes responsivos e respeito à redução de movimento. */
