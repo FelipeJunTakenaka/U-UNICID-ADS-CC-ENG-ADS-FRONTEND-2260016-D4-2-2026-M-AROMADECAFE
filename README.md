@@ -1,133 +1,104 @@
-[![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](./LICENSE)
-[![Website Status](https://img.shields.io/badge/website-up-success.svg)](https://aromadecafe.up.railway.app)
-[![W3C Validated](https://img.shields.io/badge/w3c-validated-brightgreen.svg)](https://validator.w3.org/)
+# ☕ Cafeteria Aroma de Café — Projeto Front-End 2026
+
+> *Instituição:* UNICID — Curso Superior de Informática (Desenvolvimento Front-End)  
+> *Turma:* U-UNICID-ADS-CC-ENG-ADS-FRONTEND-2260016-D4-2-2026-M-AROMADECAFE  
+> *Professores:* Prof. Paulo Fratta e Profª. Tatiana  
+> *Entrega:* 2ª Entrega Final (AV A1 / A2) — Novembro de 2026
+
+Aplicação web institucional e educativa dedicada à venda de cafés especiais sustentáveis, ao fortalecimento da agricultura familiar local e à conscientização ambiental.
+
+🌐 *Site Publicado (HTTPS):* [https://railway.app](https://railway.app)  
+📂 *Repositório Oficial:* [://github.com](https://://github.com)
+
+---
+
+## 🎯 Objetivos e Relação com os ODS (ONU)
+
+O projeto promove o consumo consciente e a inclusão social por meio de uma cafeteria fictícia com práticas responsáveis:
+- *ODS 8 (Trabalho Decente e Crescimento Econômico):* Valorização de pequenos produtores rurais (comércio justo / Fairtrade) e geração de emprego para moradores da comunidade local.
+- *ODS 12 (Consumo e Produção Responsáveis):* Redução de descartáveis, uso de embalagens biodegradáveis e reaproveitamento integral da borra de café em compostagem orgânica.
+- *ODS 13 (Ação Contra a Mudança Global do Clima):* Educação ambiental sobre o impacto dos resíduos plásticos e incentivo a hábitos sustentáveis.
+- *ODS 10 (Redução das Desigualdades):* Acessibilidade digital prioritária para pessoas com deficiência (WCAG AA).
+
+---
+
+## ✨ Funcionalidades Implementadas
+
+- *Acessibilidade Digital (WCAG):* Barra de acessibilidade em todas as páginas com ajuste de escala de texto (A- / A+), modo de *Alto Contraste, leitura em voz alta (Web Speech API), navegação completa por teclado com foco visível, atalho *"Pular para o conteúdo", atributos ARIA e suporte ao *VLibras*.
+- *JavaScript Interativo & localStorage:* Validação personalizada em tempo real nos formulários de Contato e Orçamento (preventDefault, mensagens de erro acessíveis e destaque visual), salvamento automático de rascunhos no navegador (localStorage), filtros dinâmicos e modal lightbox.
+- *Recursos Multimídia:* Vídeo em destaque na página inicial, player HTML5 com controles personalizados, vídeos educativos incorporados (<iframe>) e galeria fotográfica documental estilo exposição de museu.
+- *Design Responsivo:* Layout adaptável para dispositivos móveis, tablets e desktops utilizando CSS Grid, Flexbox e variáveis CSS.
+
+---
+
+## 🚀 Como Rodar o Projeto Localmente
+
+1. *Clone o repositório:*
+   bash
+   git clone https://://github.com.git
+   
+2. *Acesse a pasta do projeto:*
+   bash
+   cd U-UNICID-ADS-CC-ENG-ADS-FRONTEND-2260016-D4-2-2026-M-AROMADECAFE
+   
+3. *Execute no navegador:*
+   - Abra o arquivo index.html diretamente em qualquer navegador moderno, *ou*
+   - Utilize a extensão *Live Server* no Visual Studio Code clicando em "Go Live" para simular o servidor HTTP local.
+
+---
+
+## 🗺️ Mapa do Site e Estrutura de Pastas
+
+*Fluxo de Navegação:*  
+Início → Sobre → Cardápio → Sustentabilidade → Projetos Sociais → Galeria → Notícias → Mídias → Orçamento → Contato
+
+text
+├── index.html                  # Página inicial com vídeo de fundo e apresentação
+├── css/
+│   ├── style.css               # Estilos globais, cabeçalho, acessibilidade e responsividade
+│   ├── paginas.css             # Estilos das páginas internas (Sobre, Cardápio, Galeria, Mídias, Notícias)
+│   └── orcamento.css           # Estilos específicos da página de Orçamento
+├── js/
+│   └── script.js               # Acessibilidade, Web Speech API, validações, localStorage e eventos DOM
+├── paginas/
+│   ├── sobre.html              # História, missão, visão, valores e equipe
+│   ├── cardapio.html           # Catálogo de produtos sustentáveis com filtros e modal
+│   ├── sustentabilidade.html   # Práticas ambientais e reaproveitamento de resíduos
+│   ├── projetos.html           # Ações sociais e apoio a pequenos produtores
+│   ├── galeria.html            # Exposição fotográfica documental com carrossel e lightbox
+│   ├── noticias.html           # Artigos e novidades com busca e filtros
+│   ├── midias.html             # Vídeos educativos, player HTML5 e Shorts
+│   ├── orcamento.html          # Simulador de orçamento e comparativo de hospedagem
+│   └── contato.html            # Formulário validado, canais de atendimento e redes sociais
+├── img/                        # Imagens otimizadas do site e da exposição
+├── video/                      # Arquivos de vídeo locais
+├── docs/                       # Documentação acadêmica (escopo, diário de bordo, testes e IA)
+├── LICENSE                     # Licença MIT
+└── README.md                   # Documentação principal do repositório
 
 
-# U-UNICID-ADS-CC-ENG-ADS-FRONTEND-2260016-D4-2-2026-M-AROMADECAFE
-# Projeto Aroma de Café 2026 Desenvolvimento Front-End
+---
 
-# Sobre o Projeto:
-Aroma de Café é uma aplicação web dedicada á venda de cafés sustentáveis e a conscientização ambiental.
+## 📂 Documentação do Projeto (/docs)
 
-# Site publicado:
-aromadecafe.up.railway.app
+Toda a documentação exigida na rubrica de avaliação está organizada na pasta /docs:
+- *Escopo do Projeto:* Identificação, objetivos, público-alvo, requisitos funcionais e não funcionais.
+- *Diário de Bordo:* Registro datado das decisões técnicas, dificuldades, aprendizados e histórico de uso de IA (prompts aceitos e revisados).
+- *Melhorias desde o MVP:* Comparativo de antes e depois das correções aplicadas após a 1ª entrega.
+- *Orçamento de Hospedagem e Domínio:* Análise comparativa de 3 provedores de hospedagem e 3 registros de domínio, com justificativa técnica pela escolha do *Railway*.
+- *Evidências de Testes:* Relatórios e capturas de tela da validação W3C, testes de acessibilidade (WCAG / teclado) e responsividade.
 
-# Repositório do projeto no Github:
-https://github.com/FelipeJunTakenaka/U-UNICID-ADS-CC-ENG-ADS-FRONTEND-2260016-D4-2-2026-M-AROMADECAFE
+---
 
-# Escopo do projeto Aroma de Café:
-1. Identificação
+## 👥 Integrantes da Equipe e Divisão de Papéis
 
- Nome do Projeto: Cafeteria Aroma de Café
-
-
-Integrantes:
-
-Ednalvo Jose da Silva
-
-Lucas Santos Silva
-
-Renan Lopes
-
-Felipe Jun
-
-Gabriel Camilo
-
-Rhian Khelv
-
-Priscila da Silva Souza
-
- Geovane Santos
-
- 
-Disciplina: Front-End
-
-
-Professor: Paulo Fratta
-
-
-Data: 22/09/2026.
-
-# 2. Contexto e Justificativa
-O projeto foi desenvolvido para conscientizar a sociedade sobre a importância da sustentabilidade,
-do consumo consciente e do impacto social positivo. A proposta demonstra como empresas
-podem contribuir para a preservação ambiental por meio de práticas responsáveis, reciclagem e
-apoio a pequenos produtores de café
-
-
-# 3. Objetivos
-
-# Objetivo Geral: 
-Promover informações sobre sustentabilidade e consumo consciente através de
-uma cafeteria fictícia.
-
-# Objetivos Específicos:
-• Incentivar o consumo consciente.
-
-• Divulgar práticas sustentáveis.
-
-• Apresentar ações de impacto social.
-
-• Valorizar pequenos produtores de café.
-
-• Conscientizar sobre redução de resíduos e reciclagem.
-
-
-# 4. Público-Alvo
-Jovens e adultos interessados em sustentabilidade, consumidores conscientes, apreciadores de
-cafés especiais e pessoas com deficiência, priorizando acessibilidade e inclusão.
-
-
-# 5. Escopo Funcional
-O site contará com as páginas: Início, Sobre, Produtos, Sustentabilidade, Projetos Sociais, Galeria,
-Notícias, Mídias, Contato e Orçamento/Hospedagem. Possuirá menu de navegação, formulário de
-contato, conteúdo educativo, galeria de imagens, notícias e informações institucionais.
-
-
-# 6. Escopo Não Funcional
-Acessibilidade com textos alternativos em imagens, contraste adequado, estrutura semântica
-HTML5 e navegação simples. O site deverá ser responsivo para computadores, tablets e celulares,
-possuir imagens otimizadas e código organizado.
-
-
-# 7. Mapa do Site
-Home → Sobre → Produtos → Sustentabilidade → Projetos Sociais → Galeria → Notícias →
-Mídias → Contato → Orçamento.
-
-
-# 8. Conteúdo e Identidade Visual
-Cores predominantes: marrom, bege e verde. Tipografia: Arial e Franklin Gothic. Tom de
-comunicação amigável, educativo e informativo. Identidade visual inspirada em café, meio
-ambiente e sustentabilidade.
-
-
-# 9. Tecnologias e Ferramentas
-HTML5, CSS3, Visual Studio Code, navegadores modernos e recursos de validação de código.
-
-
-# 10. Cronograma e Divisão de Tarefas
-Planejamento do projeto, desenvolvimento HTML, desenvolvimento CSS, testes, correções e
-entrega final. As responsabilidades serão distribuídas entre os integrantes da equipe.
-
-
-# 11. Riscos e Restrições
-Limitação de tempo, dificuldades técnicas, integração entre páginas, disponibilidade dos
-integrantes e curva de aprendizado das tecnologias.
-
-
-# 12. Critérios de Aceitação
-O projeto será considerado concluído quando possuir navegação funcional, estrutura semântica
-HTML5, formulário de contato, conteúdo relacionado à sustentabilidade e impacto social, recursos
-visuais adequados, CSS aplicado e acessibilidade básica.
-
-
-# Funcionalidades do Site:
-
-* Implementação das funções de acessibilidade
-* Área dedicada a contribuição financeira e apoio ás iniciativas do projeto
-* Página dedicada para o suporte e dúvidas
-* Página dedicada a informações, compras, assuntos e novidades relacionadas a parte de sustentabilidade
-* Integração com vídeos, links de contato, suporte a áudios e conteúdos incorporados
-* Design totalmente responsivo para todo tipo de dispositivo
-* Adaptação completa de tela para layouts, celulares, notebooks, tablets, entre outros
-* Menu que facilitam a navegação e o acesso rápido para as seções de compras, contatos e notícias
+| Integrante | Responsabilidades Principais |
+| :--- | :--- |
+| *Ednalvo Jose da Silva* | Desenvolvimento das páginas Sobre, Mídias e Galeria, curadoria visual e integração de IA |
+| *Felipe Jun Takenaka* | Gestão do repositório GitHub, versionamento, deploy no Railway e integração geral |
+| *Gabriel Camilo* | Estruturação HTML5 semântica e estilização CSS das páginas institucionais |
+| *Geovane Santos* | Desenvolvimento de conteúdo educativo sobre sustentabilidade e projetos sociais |
+| *Lucas Santos Silva* | Implementação de JavaScript interativo, validações e armazenamento com localStorage |
+| *Priscila da Silva Souza* | Recursos de acessibilidade (WCAG), revisão de textos alternativos e documentação /docs |
+| *Renan Lopes* | Layout responsivo (Grid/Flexbox), estilização CSS e testes multi-dispositivo |
+| *Rhian Khelv* | Desenvolvimento da página de Contato, formulários e evidências de testes / W3C |
