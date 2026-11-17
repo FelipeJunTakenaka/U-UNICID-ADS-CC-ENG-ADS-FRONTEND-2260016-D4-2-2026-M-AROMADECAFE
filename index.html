@@ -14,16 +14,30 @@
   <title>Aroma de café</title>
 
   <!-- Arquivo CSS principal do projeto -->
-  <link rel="stylesheet" href="css/style_principal.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="pagina-acessivel">
+
+  <a class="link-pular-conteudo" href="#conteudo-principal">Pular para o conteúdo</a>
+
+  <!-- Controles comuns de acessibilidade: contraste, texto e leitura em voz alta -->
+  <nav class="barra-acessibilidade" aria-label="Opções de acessibilidade">
+    <span>Acessibilidade:</span>
+    <button id="diminuirTexto" type="button" aria-label="Diminuir tamanho do texto">A-</button>
+    <button id="aumentarTexto" type="button" aria-label="Aumentar tamanho do texto">A+</button>
+    <button id="alternarContraste" type="button" aria-pressed="false">Alto contraste</button>
+    <button id="ouvirPagina" type="button">Ouvir página</button>
+    <button id="pararLeitura" type="button" disabled>Parar leitura</button>
+    <a href="https://vlibras.gov.br/doc/widget/installation/webpageintegration.html" target="_blank" rel="noopener noreferrer">Ajuda do VLibras</a>
+    <span id="statusAcessibilidade" class="texto-somente-leitor" role="status" aria-live="polite"></span>
+  </nav>
 
   <!-- Cabeçalho fixo com menu de navegação -->
-  <header class="topo">
+  <header class="topo topo-acessibilidade">
     <h1>Aroma de Café</h1>
 
     <!-- Botão usado no celular para abrir/fechar o menu -->
-    <button id="botaoMenu" class="botao-menu">☰</button>
+    <button id="botaoMenu" class="botao-menu" type="button" aria-label="Abrir menu" aria-expanded="false">☰</button>
 
     <!-- Menu principal. O JavaScript irá mostrar/ocultar no celular -->
 <nav id="menu" class="menu">
@@ -47,6 +61,7 @@
        Referência do vídeo: 1920 x 1080 pixels (Full HD / 16:9)
        Camadas: conteúdo > overlay > vídeo > imagem de fallback
        ========================================================= -->
+  <main id="conteudo-principal" tabindex="-1">
   <section id="inicio" class="home_intro">
 
     <!-- Vídeo decorativo usado como plano de fundo.
@@ -83,7 +98,7 @@
 
     <div class="grade-cardapio">
       <article class="card produto">
-        <img src="./img/cappucino.jpg" alt="Cappuccino">
+        <img src="./img/cappuccino.jpg" alt="Cappuccino">
         <h3>Cappuccino</h3>
         <p>Café com leite cremoso e espuma.</p>
         <strong>R$ 12,00</strong>
@@ -206,6 +221,8 @@
 
 
 
+  </main>
+
   <footer class="rodape">
     <p>Projeto Aroma de Café | © Direitos Reservados</p>
   </footer>
@@ -217,31 +234,8 @@
        - destaque dos produtos
        - validação simples do formulário
        ========================================================= -->
-  <script src="js/script.js"></script>
+   <script src="https://vlibras.gov.br/app/vlibras-plugin.js" async></script> <!-- async = plugin externo do VLibras para que a ferramenta de tradução em Libras carregue sem bloquear a renderização da página -->
+  <script src="js/script.js" defer></script> <!-- defer = para garantir que a manipulação do DOM só aconteça depois que toda a árvore HTML estiver completamente carregada -->
 
-  <!-- =========================================================
-       TESTE DE ROLAGENS
-       Deixe apenas UMA rolagem ativa por vez.
-       Para testar outro efeito, comente a linha atual
-       e descomente a rolagem desejada.
-       ========================================================= -->
-
-  <!-- Linear: velocidade constante -->
-  <!-- <script src="js/rolagem.js"></script> -->
-
-  <!-- Ease In: começa devagar e acelera -->
-  <!--<script src="js/rolagemA.js"></script>
-
-  <!- Ease Out: começa rápido e termina devagar -->
-  <!-- <script src="js/rolagemB.js"></script> -->
-
-  <!-- Ease In Out: começa devagar, acelera e desacelera -->
-  <!-- <script src="js/rolagemC.js"></script> -->
-
-  <!-- Bounce: efeito de quicar -->
-  <!-- <script src="js/rolagemD.js"></script> -->
-
-  <!-- Elastic: efeito de mola -->
-  <!-- <script src="js/rolagemE.js"></script> -->
 </body>
 </html>
