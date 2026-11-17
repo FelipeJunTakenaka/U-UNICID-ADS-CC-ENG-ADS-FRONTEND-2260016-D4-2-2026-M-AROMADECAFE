@@ -903,6 +903,8 @@ body.alto-contraste .video-info .botao-detalhes {
   box-shadow: 0 12px 26px rgba(43, 29, 22, 0.16), inset 0 0 0 1px rgba(255, 255, 255, 0.08);
 }
 
+/* "O passe-partout é a margem de cartolina ou espaço neutro que aplicamos entre a fotografia e a moldura nas obras da galeria. Ele reproduz a estética de museu e de acervos fotográficos profissionais, criando um respiro visual que destaca a imagem e protege a mídia contra o contato direto com o vidro." */
+
 .passe-partout {
   background-color: #F7F4EC;
   padding: 18px;

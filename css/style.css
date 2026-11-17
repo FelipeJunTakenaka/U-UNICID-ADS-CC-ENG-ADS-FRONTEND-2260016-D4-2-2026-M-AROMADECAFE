@@ -202,7 +202,7 @@ body {
   clip-path: inset(50%);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) { /*faz parte da responsividade para uso no celular e cria o menu haburguer -*/
   .pagina-acessivel .barra-acessibilidade {
     justify-content: flex-start;
     gap: 4px;
@@ -654,17 +654,25 @@ body {
   
 }
 
-
+/* ==========================================================================
+   ACESSIBILIDADE: REDUÇÃO DE MOVIMENTO (WCAG 2.3.3)
+   Detecta se o usuário ativou "Reduzir animações" no sistema operacional
+   (Windows/Android/iOS) e desativa efeitos de movimento que causam desconforto.
+   ========================================================================== */
 @media (prefers-reduced-motion: reduce) {
+  
+  /* Desativa a rolagem suave (smooth) da página, tornando o salto imediato */
   html {
     scroll-behavior: auto;
   }
 
+  /* Aplica a regra a TODOS os elementos (*) e pseudoelementos (::before, ::after) */
   *,
   *::before,
   *::after {
-    scroll-behavior: auto !important;
-    transition-duration: 0.01ms !important;
-    animation-duration: 0.01ms !important;
-  }
+    scroll-behavior: auto !important;      /* Força rolagem instantânea em qualquer área */
+    transition-duration: 0.01ms !important; /* Reduz transições visuais a praticamente zero */
+    animation-duration: 0.01ms !important;  /* Encerra animações imediatamente sem travar o JS */
+  } 
+  /* Ele detecta se o usuário ativou no próprio sistema operacional (Windows, Android, iOS) a opção de "reduzir animações/movimentos" (usada por pessoas com labirintite, sensibilidade vestibular, epilepsia ou déficit de atenção) e desliga as transições e rolagens suaves do site automaticamente. -*/
 }
