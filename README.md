@@ -108,3 +108,6 @@ Toda a documentação exigida na rubrica de avaliação está organizada na past
 
 ## Print Validação CSS
 <img width="1331" height="523" alt="Validação W3C CSS" src="https://github.com/user-attachments/assets/04c0e92d-598e-4689-85bf-8f7c00f007de" />
+
+## Print Tela Home
+<img width="1348" height="626" alt="Print Tela Home" src="https://github.com/user-attachments/assets/26ae9365-8715-43a7-b2a5-63acf436e0ac" />
