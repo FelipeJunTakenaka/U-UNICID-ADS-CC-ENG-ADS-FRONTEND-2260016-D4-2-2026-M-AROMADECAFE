@@ -8,7 +8,7 @@
 Aplicação web institucional e educativa dedicada à venda de cafés especiais sustentáveis, ao fortalecimento da agricultura familiar local e à conscientização ambiental.
 
 🌐 *Site Publicado (HTTPS):* https://aroma-de-cafe-production-8220c41b.up.railway.app/  
-📂 *Repositório Oficial:* [://github.com](https://://github.com)
+📂 *Repositório Oficial:* https://github.com/FelipeJunTakenaka/U-UNICID-ADS-CC-ENG-ADS-FRONTEND-2260016-D4-2-2026-M-AROMADECAFE
 
 ---
 
