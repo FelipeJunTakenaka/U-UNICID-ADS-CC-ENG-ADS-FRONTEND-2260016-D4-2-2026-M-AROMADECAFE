@@ -102,3 +102,9 @@ Toda a documentação exigida na rubrica de avaliação está organizada na past
 | *Priscila da Silva Souza* | Recursos de acessibilidade (WCAG), revisão de textos alternativos e documentação /docs |
 | *Renan Lopes* | Layout responsivo (Grid/Flexbox), estilização CSS e testes multi-dispositivo |
 | *Rhian Khelv* | Desenvolvimento da página de Contato, formulários e evidências de testes / W3C |
+
+## Print da Validação W3C HTML
+<img width="1333" height="565" alt="Validação W3C HTML" src="https://github.com/user-attachments/assets/d8fe186b-2872-43ff-b18f-7ae82079b1a7" />
+
+## Print Validação CSS
+<img width="1331" height="523" alt="Validação W3C CSS" src="https://github.com/user-attachments/assets/04c0e92d-598e-4689-85bf-8f7c00f007de" />
